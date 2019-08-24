@@ -28,7 +28,11 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   # Christmas AND the New Year's arrays
 
   holiday_hash.map do |key, value|
-    
+    if key == :winter then
+      holiday_hash[key].map do |key2, value2|
+        holiday_hash[key][key2].push(supply)
+      end
+    end
   end
 end
 
