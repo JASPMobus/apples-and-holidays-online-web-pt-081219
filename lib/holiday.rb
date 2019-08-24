@@ -73,7 +73,7 @@ def all_winter_holiday_supplies(holiday_hash)
 
   holiday_hash[:winter].inject do |ret, (key, value)|
     value.each do |val|
-      ret = ret + " " + val
+      ret = ret + " " + val.to_s
     end
   end
 end
