@@ -70,11 +70,10 @@ def all_winter_holiday_supplies(holiday_hash)
   # }
   # return the second element in the 4th of July array
   # return an array of all of the supplies that are used in the winter season
-
-  holiday_hash[:winter].inject do |ret, (key, value)|
-    value.each do |val|
-      ret = ret.to_s + " " + val.to_s
-    end
+  ret = ""
+  
+  holiday_hash[:winter].each do |key, value|
+    
   end
 end
 
