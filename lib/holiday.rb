@@ -73,7 +73,8 @@ def all_winter_holiday_supplies(holiday_hash)
   ret = ""
   
   holiday_hash[:winter].each do |key, value|
-    
+    value.each do |val|
+      ret << val
   end
 end
 
