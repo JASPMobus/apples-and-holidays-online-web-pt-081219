@@ -28,6 +28,8 @@ def add_supply_to_winter_holidays(holiday_hash, supply)
   # Christmas AND the New Year's arrays
 
   holiday_hash.map do |key, value|
+    
+  end
 end
 
 
